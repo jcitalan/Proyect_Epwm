@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title%}
+  Demo
+{% endblock%}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<form id="dragToUploadForm">
+  <div class="drag-area">
+    <header>Arrastra tu archivo de excel</header>
+    <span>O</span>
+    <button>Adjunta tu archivo</button>
+    <input type="file" id="inputFile" hidden />
+  </div>
+  <div id="preview"></div>
+</form>
+{% endblock %}
